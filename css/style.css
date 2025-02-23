@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #ffeba7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #1d1e22;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.content-box {
+    margin: 40px auto;
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    gap: 0 5%;
+}
+
+.filter-box {
+    width: 20%;
+    height: 100vh;
+    background: #2a2b38;
+    border-radius: 7px;
+}
+
+.form-box {
+    width: 60%;
+    height: 100vh;
+    background: #2a2b38;
+    border-radius: 7px;
+}
+
+.title h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 50px;
+}
