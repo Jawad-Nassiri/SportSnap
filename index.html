@@ -10,13 +10,30 @@
 </head>
 <body>
     <div class="container">
-        <div class="content-box">
-            <div class="filter-box"></div>
-            <div class="form-box">
-                <div class="title"><h1>Gym Tracker</h1></div>
+        <div class="form-container">
+            <div class="title">
+                <h1>Gym Tracker</h1>
             </div>
-        </div>
+            <form action="">
 
+                <div class="input-field-box">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" name="date" class="input-filed date" placeholder="Date">
+                </div>
+
+                <div class="input-field-box">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <input type="text" name="exercise" class="input-filed exercise" placeholder="Exercise" autocomplete="off">
+                </div>
+
+                <div class="add-set-container">
+                    <div class="set-icon">
+                        <i class="fa-solid fa-list-ol"></i>
+                        <span>Sets</span>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
