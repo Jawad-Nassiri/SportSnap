@@ -14,7 +14,7 @@
             <div class="title">
                 <h1>Gym Tracker</h1>
             </div>
-            <form action="">
+            <form action="check.php">
 
                 <div class="input-field-box">
                     <i class="fa-solid fa-calendar-days"></i>
@@ -36,20 +36,20 @@
 
                         <div class="set-group">
                             <span>Set 1:</span>
-                            <input type="number" name="reps" min="1" placeholder="Reps" required>
                             <input type="number" name="weight" min="1" step="0.5" placeholder="Weight (kg)" required>
+                            <input type="number" name="reps" min="1" placeholder="Reps" required>
                         </div>
     
                         <div class="set-group">
                             <span>Set 2:</span>
-                            <input type="number" name="reps" min="1" placeholder="Reps" required>
                             <input type="number" name="weight" min="1" step="0.5" placeholder="Weight (kg)" required>
+                            <input type="number" name="reps" min="1" placeholder="Reps" required>
                         </div>
 
                         <div class="set-group">
                             <span>Set 3:</span>
-                            <input type="number" name="reps" min="1" placeholder="Reps" required>
                             <input type="number" name="weight" min="1" step="0.5" placeholder="Weight (kg)" required>
+                            <input type="number" name="reps" min="1" placeholder="Reps" required>
                         </div>
 
                     </div>
@@ -64,6 +64,113 @@
             </form>
         </div>
     </div>
+
+    <div class="container-list">
+        <div class="list">
+            <table class="workout-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Exercise</th>
+                        <th>Weight (kg)</th>
+                        <th>Reps</th>
+                    </tr>
+                </thead>
+                <tbody class="list-content">
+                    <!-- Dynamic data from database will be inserted here -->
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Squat</td>
+                        <td>80</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Squat</td>
+                        <td>100</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-16</td>
+                        <td>Bench Press</td>
+                        <td>90</td>
+                        <td>6</td>
+                    </tr>
+                    <!-- More rows dynamically added -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+
+
     <script src="js/script.js"></script>
 </body>
 </html>

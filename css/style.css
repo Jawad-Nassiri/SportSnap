@@ -105,9 +105,10 @@ i {
 .set-group-container {
     max-height: 221px;
     overflow-y: auto;
-    width: 71%;
+    width: 70%;
     scrollbar-width: thin; 
-    scrollbar-color: #c4c3ca #23232c;
+    scrollbar-color: #ffeba7 #1f2029;
+    /* background: red; */
 }
 
 .set-group-container::-webkit-scrollbar {
@@ -115,7 +116,7 @@ i {
 }
 
 .set-group-container::-webkit-scrollbar-thumb {
-    background: #c4c3ca; 
+    background: #ffeba7;
     border-radius: 2px;
 }
 
@@ -133,11 +134,11 @@ i {
 .set-group span {
     color: #ffeba7;
     font-size: 22px;
-    margin-right: 12px;
+    width: 20%;
 }
 
 .set-group input {
-    width: 160px;
+    width: 40%;
     height: 90%;
     background: #1f2029;
     outline: 0;
@@ -147,6 +148,10 @@ i {
     letter-spacing: 0.5px;
     padding: 0 15px;
     border-radius: 4px;
+}
+
+.set-group input[name="reps"] {
+    margin-right: 5px;
 }
 
 .btn-container {
@@ -201,4 +206,73 @@ i {
 button:hover {
     transform: translateY(-1px);
     color: #ffeba7;
+}
+
+
+/* list start  */
+.container-list {
+    width: 100%;
+    height: 700px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.list {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.workout-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1f2029;
+    color: #c4c3ca;
+}
+
+.workout-table thead {
+    background: #2a2b38;
+    color: #ffeba7;
+}
+
+.workout-table th,
+.workout-table td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ffeba7;
+    height: 30px;
+    line-height: 30px;
+}
+
+.workout-table tbody {
+    max-height: 500px;
+    overflow-y: auto;
+    display: block;
+}
+
+.workout-table thead,
+.workout-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.workout-table tbody {
+    display: block;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffeba7 #1f2029;
+}
+
+.workout-table tbody::-webkit-scrollbar {
+    width: 3px;
+}
+
+.workout-table tbody::-webkit-scrollbar-thumb {
+    background: #ffeba7;
+    border-radius: 5px;
+}
+
+.workout-table tbody::-webkit-scrollbar-track {
+    background: #1f2029;
 }
