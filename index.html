@@ -66,6 +66,33 @@
     </div>
 
     <div class="container-list">
+        <!-- Date Filter Section -->
+        <div class="filter-section">
+            <h3>Filter Workouts</h3>
+            <div class="filter-group">
+                <label for="start-date">From:</label>
+                <input type="date" id="start-date" class="date-input" value="2025-03-10">
+            </div>
+            <div class="filter-group">
+                <label for="end-date">To:</label>
+                <input type="date" id="end-date" class="date-input" value="2025-03-17">
+            </div>
+            <div class="filter-group">
+                <label for="exercise-filter">Exercise:</label>
+                <select id="exercise-filter" class="date-input">
+                    <option value="">All Exercises</option>
+                    <option value="Squat">Squat</option>
+                    <option value="Bench Press">Bench Press</option>
+                    <option value="Deadlift">Deadlift</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <button id="apply-filter" class="filter-button">Apply Filter</button>
+                <button id="reset-filter" class="filter-button reset-button">Reset</button>
+            </div>
+        </div>
+        
+        <!-- Workout Table -->
         <div class="list">
             <table class="workout-table">
                 <thead>
@@ -77,7 +104,7 @@
                     </tr>
                 </thead>
                 <tbody class="list-content">
-                    <!-- Dynamic data from database will be inserted here -->
+                    <!-- Sample data -->
                     <tr>
                         <td>2025-03-16</td>
                         <td>Squat</td>
@@ -109,60 +136,35 @@
                         <td>6</td>
                     </tr>
                     <tr>
-                        <td>2025-03-16</td>
+                        <td>2025-03-15</td>
+                        <td>Deadlift</td>
+                        <td>120</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-14</td>
                         <td>Bench Press</td>
+                        <td>85</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-13</td>
+                        <td>Squat</td>
                         <td>90</td>
                         <td>6</td>
                     </tr>
                     <tr>
-                        <td>2025-03-16</td>
-                        <td>Bench Press</td>
-                        <td>90</td>
+                        <td>2025-03-12</td>
+                        <td>Deadlift</td>
+                        <td>115</td>
                         <td>6</td>
                     </tr>
                     <tr>
-                        <td>2025-03-16</td>
+                        <td>2025-03-11</td>
                         <td>Bench Press</td>
-                        <td>90</td>
-                        <td>6</td>
+                        <td>85</td>
+                        <td>8</td>
                     </tr>
-                    <tr>
-                        <td>2025-03-16</td>
-                        <td>Bench Press</td>
-                        <td>90</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>2025-03-16</td>
-                        <td>Bench Press</td>
-                        <td>90</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>2025-03-16</td>
-                        <td>Bench Press</td>
-                        <td>90</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>2025-03-16</td>
-                        <td>Bench Press</td>
-                        <td>90</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>2025-03-16</td>
-                        <td>Bench Press</td>
-                        <td>90</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>2025-03-16</td>
-                        <td>Bench Press</td>
-                        <td>90</td>
-                        <td>6</td>
-                    </tr>
-                    <!-- More rows dynamically added -->
                 </tbody>
             </table>
         </div>
