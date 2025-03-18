@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportSnap</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- Google Fonts for the font -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="container">
+<?php include "../public/header.html.php" ?>
+<div class="container">
         <div class="form-container">
             <div class="title">
                 <h1>Gym Tracker</h1>
@@ -169,10 +159,10 @@
             </table>
         </div>
     </div>
+
+<?php include "../public/footer.html.php" ?>
+
     
     
 
 
-    <script src="js/script.js"></script>
-</body>
-</html>

@@ -1,0 +1,21 @@
+RewriteEngine On
+
+    RewriteCond %{REQUEST_URI} ^/public/ [OR]
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    RewriteRule ^404$ errors/404.php
+    RewriteRule ^403$ /errors/403.php
+
+
+
+RewriteRule ^admin/?$                             index.php?doc=admin [L,QSA]
+RewriteRule ^admin/(\w+)/?$                       index.php?doc=admin&controller=$1 [L,QSA]
+RewriteRule ^admin/(\w+)/(\w+)$                   index.php?doc=admin&controller=$1&method=$2 [L,QSA]
+RewriteRule ^admin/(\w+)/(\w+)/(\S+)$             index.php?doc=admin&controller=$1&method=$2&id=$3 [L,QSA]
+
+RewriteRule ^$                              index.php [L]
+
+RewriteRule ^(\w+)/?$                       index.php?controller=$1 [L,QSA]
+RewriteRule ^(\w+)/(\w+)$                   index.php?controller=$1&method=$2 [L,QSA]
+RewriteRule ^(\w+)/(\w+)/(\S+)$             index.php?controller=$1&method=$2&id=$3 [L,QSA]
