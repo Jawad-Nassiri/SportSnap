@@ -9,6 +9,6 @@
     <!-- css custom  -->
     <link rel="stylesheet" href="http://localhost/snapsport/public/assets/css/style.css">
     <!-- js custom  -->
-    <script src="http://localhost/uni-watch/public/assets/js/script.js" defer></script>
+    <script src="http://localhost/snapsport/public/assets/js/script.js" defer></script>
 </head>
 <body>

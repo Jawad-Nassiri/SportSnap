@@ -2,7 +2,7 @@
 <div class="container">
         <div class="form-container">
             <div class="title">
-                <h1>Gym Tracker</h1>
+                <h1>Leg Day Tracker</h1>
             </div>
             <form action="check.php">
 
@@ -55,6 +55,7 @@
         </div>
     </div>
 
+
     <div class="container-list">
         <!-- Date Filter Section -->
         <div class="filter-section">
@@ -70,10 +71,11 @@
             <div class="filter-group">
                 <label for="exercise-filter">Exercise:</label>
                 <select id="exercise-filter" class="date-input">
-                    <option value="">All Exercises</option>
-                    <option value="Squat">Squat</option>
-                    <option value="Bench Press">Bench Press</option>
-                    <option value="Deadlift">Deadlift</option>
+                    <option value="All Exercises" selected>All Exercises</option>
+                    <option value="Barbell Squat">Barbell Squat</option>
+                    <option value="Leg Press">Leg Press</option>
+                    <option value="Leg Extension">Leg Extension</option>
+                    <option value="Bulgarian Squat">Bulgarian Squat</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -91,6 +93,7 @@
                         <th>Exercise</th>
                         <th>Weight (kg)</th>
                         <th>Reps</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody class="list-content">
@@ -100,60 +103,120 @@
                         <td>Squat</td>
                         <td>80</td>
                         <td>10</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-16</td>
                         <td>Squat</td>
                         <td>100</td>
                         <td>8</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-16</td>
                         <td>Bench Press</td>
                         <td>90</td>
                         <td>6</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-16</td>
                         <td>Bench Press</td>
                         <td>90</td>
                         <td>6</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-16</td>
                         <td>Bench Press</td>
                         <td>90</td>
                         <td>6</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-15</td>
                         <td>Deadlift</td>
                         <td>120</td>
                         <td>5</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-14</td>
                         <td>Bench Press</td>
                         <td>85</td>
                         <td>8</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-13</td>
                         <td>Squat</td>
                         <td>90</td>
                         <td>6</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-12</td>
                         <td>Deadlift</td>
                         <td>115</td>
                         <td>6</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>2025-03-11</td>
                         <td>Bench Press</td>
                         <td>85</td>
                         <td>8</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="edit-btn">Edit</button>
+                                <button class="delete-btn">Delete</button>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
